@@ -16,3 +16,16 @@ function toggleEnvelope() {
 
   isOpen = !isOpen;
 }
+const music = document.getElementById("bg-music");
+const musicBtn = document.getElementById("music-toggle");
+
+musicBtn.addEventListener("click", () => {
+  if (music.paused) {
+    music.muted = false;
+    music.play();
+    musicBtn.textContent = "⏸ Pause Music";
+  } else {
+    music.pause();
+    musicBtn.textContent = "▶ Play Music";
+  }
+});
