@@ -56,4 +56,23 @@ h1 {
 .visible {
   opacity: 1;
   pointer-events: all;
+
+  .music-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#music-toggle {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f8c3c3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#music-toggle:hover {
+  background-color: #f4a4a4;
+}
 }
